@@ -11,6 +11,7 @@ export default function Stories({
   stories = [],
   width = '100%',
   height = '100%',
+  progressBarPosition = '',
   onStoryChange = () => {},
   currentIndex = 0,
   defaultDuration = 10000,
@@ -126,7 +127,7 @@ export default function Stories({
         className={`${styles.main} ${classNames.main || ''}`}
         style={{ width, height }}
       >
-        <Progress activeStoryIndex={selectedStory.index} isPaused={isPaused} />
+        <Progress activeStoryIndex={selectedStory.index} isPaused={isPaused} progressBarPosition={progressBarPosition} />
         <Story
           key={selectedStory.index}
           onPause={handlePause}

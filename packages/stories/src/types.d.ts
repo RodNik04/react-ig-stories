@@ -26,6 +26,7 @@ export interface IStoryProps {
   stories: IStoryObject[];
   height?: '100%';
   width?: '100%';
+  progressBarPosition?: '';
   onStoryChange: (currentIndex: number) => void;
   currentIndex?: number;
   defaultDuration?: number;
@@ -40,6 +41,7 @@ export interface IStoryContext {
   stories: IStoryIndexedObject[];
   height?: '100%';
   width?: '100%';
+  progressBarPosition?: '';
   defaultDuration: number;
   isPaused: boolean;
   classNames?: IStoryClassNames;

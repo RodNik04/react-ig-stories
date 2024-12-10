@@ -6,13 +6,14 @@ import styles from './progress.styles.css';
 interface IProgressProps {
   activeStoryIndex: number;
   isPaused: boolean;
+  progressBarPosition: string;
 }
 
 export function Progress(props: IProgressProps) {
   const { stories, classNames } = useStoriesContext();
   return (
     <div
-      className={`${styles.wrapper} ${classNames?.progressContainer || ''}`}
+      className={`${props.progressBarPosition === "bottom" ? styles.wrapperBottom : styles.wrapper} ${classNames?.progressContainer || ''}`}
       style={{ gridTemplateColumns: `repeat(${stories.length},1fr)` }}
     >
       {stories.map((story: IStoryIndexedObject) => (
