@@ -3,6 +3,7 @@
   "workspaces": [
     "packages/*"
   ],
+  "name": "react-ig-stories",
   "version": "1.1.2",
   "description": "instagram style stories in react js",
   "scripts": {
@@ -23,9 +24,7 @@
   "homepage": "https://hannadrehman.github.io/stories-react/",
   "bugs": "https://github.com/hannadrehman/stories-react/issues",
   "author": {
-    "name": "Hannad Rehman",
-    "email": "hannad63@gmail.com",
-    "url": "https://hannadrehman.com"
+    "name": "Nikolas Rodriguez"
   },
   "license": "MIT",
   "devDependencies": {
